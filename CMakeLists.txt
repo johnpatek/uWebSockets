@@ -5,7 +5,7 @@ project (µWebSockets)
 
 find_package(OpenSSL REQUIRED)
 
-link_directories(${CMAKE_INSTALL_PREFIX}/lib)
+link_directories(${PROJECT_BINARY_DIR}/../libuv)
 
 set(LIBUV_INCLUDE_DIR ../libuv/include)
 set (LIBUV_LIBRARY libuv.so)
